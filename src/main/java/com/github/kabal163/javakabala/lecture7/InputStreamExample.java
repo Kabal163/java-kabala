@@ -2,6 +2,7 @@ package com.github.kabal163.javakabala.lecture7;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,6 +15,7 @@ public class InputStreamExample {
         byte[] originalBytes = originalName.getBytes(StandardCharsets.UTF_8); // получаем байтовое представление строки
 
         printInputData(new ByteArrayInputStream(originalBytes));
+        wrapStream();
     }
 
     /**
@@ -44,6 +46,24 @@ public class InputStreamExample {
             System.out.println("Прочитано из InputStream: " + out.toString(StandardCharsets.UTF_8));
         } else {
             System.out.println("Во входящем потоке пусто");
+        }
+    }
+
+    /**
+     * Пример того, как можно обернуть один поток другим,
+     * создав цепочку потоков. Не путать с паттерном chain of responsibility!
+     * В данном случае применен паттерн Декоратор (или Wrapper, обёртка)
+     *
+     * @see <a href=https://refactoring.guru/ru/design-patterns/decorator></a>
+     */
+    public static void wrapStream() {
+        // В файле записано число 2021 в бинарном формате, поэтому открыв файл через редактор, вы увидите кракозябру
+        final String filename = "src/main/resources/number.txt";
+
+        try (DataInputStream dis = new DataInputStream(new FileInputStream(filename))) {
+            System.out.println("Число, прочитанное из файла: " + dis.readInt());
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
