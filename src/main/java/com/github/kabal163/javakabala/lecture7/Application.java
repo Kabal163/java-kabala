@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
 import static com.github.kabal163.javakabala.lecture7.ByteArrayOutputStreamExample.writeToAndReadFromStream;
+import static com.github.kabal163.javakabala.lecture7.FileExample.createFileExample;
 import static com.github.kabal163.javakabala.lecture7.ObjectInputStreamExample.printStudentFromFile;
 import static com.github.kabal163.javakabala.lecture7.ObjectOutputStreamExample.writeJavaObjectToFile;
 import static com.github.kabal163.javakabala.lecture7.PolymorphismStreamExample.printInputData;
@@ -20,6 +21,7 @@ public class Application {
         runByteArrayOutputStream();
         runPolymorphismExample();
         runStreamWrapperExample();
+        runFileExample();
     }
 
     private static void runZipStreamExample() {
@@ -73,5 +75,13 @@ public class Application {
         wrapStream();
 
         System.out.println("...\nПример со stream wrapper успешно завершен");
+    }
+
+    private static void runFileExample() {
+        System.out.println("\n\nЗапуск примера работы с файлами\n...");
+
+        createFileExample();
+
+        System.out.println("...\nПример работы с файлами завершен");
     }
 }
