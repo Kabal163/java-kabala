@@ -1,4 +1,4 @@
-package com.github.kabal163.javakabala.lecture2.zoo;
+package com.github.kabal163.javakabala.lecture4.zoo;
 
 import java.util.Objects;
 

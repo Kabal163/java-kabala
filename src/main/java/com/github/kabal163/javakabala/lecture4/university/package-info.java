@@ -2,4 +2,4 @@
  * В пакете находятся классы, которые описывают структуру группы в университете.
  * Структура показывает отношения объектов друг к другу.
  */
-package com.github.kabal163.javakabala.lecture2.university;
+package com.github.kabal163.javakabala.lecture4.university;

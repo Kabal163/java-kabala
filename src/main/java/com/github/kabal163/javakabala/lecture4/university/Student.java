@@ -1,4 +1,4 @@
-package com.github.kabal163.javakabala.lecture2.university;
+package com.github.kabal163.javakabala.lecture4.university;
 
 import java.util.Objects;
 

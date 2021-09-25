@@ -3,4 +3,4 @@
  * Данные классы показывают, как можно описывать объекты
  * реального мира.
  */
-package com.github.kabal163.javakabala.lecture2.zoo;
+package com.github.kabal163.javakabala.lecture4.zoo;
