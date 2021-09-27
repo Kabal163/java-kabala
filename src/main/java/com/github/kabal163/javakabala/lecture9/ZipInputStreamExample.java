@@ -1,11 +1,11 @@
-package com.github.kabal163.javakabala.lecture7;
+package com.github.kabal163.javakabala.lecture9;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-import static com.github.kabal163.javakabala.lecture7.PolymorphismStreamExample.printInputData;
+import static com.github.kabal163.javakabala.lecture9.PolymorphismStreamExample.printInputData;
 
 public class ZipInputStreamExample {
 
