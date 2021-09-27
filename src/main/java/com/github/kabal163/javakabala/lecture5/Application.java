@@ -4,6 +4,7 @@ import com.github.kabal163.javakabala.lecture5.animal.Animal;
 import com.github.kabal163.javakabala.lecture5.animal.Cat;
 import com.github.kabal163.javakabala.lecture5.animal.Dog;
 import com.github.kabal163.javakabala.lecture5.animal.PetShop;
+import com.github.kabal163.javakabala.lecture5.furniture.Chair;
 import com.github.kabal163.javakabala.lecture5.furniture.Cupboard;
 
 import java.math.BigDecimal;
@@ -73,5 +74,10 @@ public class Application {
         cupboard2.setColor("BLUE");
 
         System.out.println(cupboard2);
+
+        // мы не можем обращаться к protected и package private методам за пределами пакета
+        Chair chair = new Chair("BLACK", new BigDecimal("1000"), true);
+//        chair.printColor();
+//        chair.printPrice();
     }
 }

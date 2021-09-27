@@ -1,5 +1,7 @@
 package com.github.kabal163.javakabala.lecture5.furniture;
 
+import com.github.kabal163.javakabala.lecture5.animal.Sofa;
+
 import java.math.BigDecimal;
 
 /**
@@ -20,6 +22,26 @@ public abstract class Furniture {
     public Furniture(String color, BigDecimal price) {
         this.color = color;
         this.price = price;
+    }
+
+    /**
+     * Мы видимо protected метод.
+     * Его может переопределить любой потомок данного класса,
+     * даже если он находится в другом пакете
+     *
+     * @see Sofa
+     */
+    protected void printPrice() {
+        System.out.println("Стоимость данного иделия: " + price);
+    }
+
+    /**
+     * А этот метод package private.
+     * Он доступен для переопределения наследникам,
+     * которые находятся только в этом же пакете.
+     */
+    void printColor() {
+        System.out.println("Цвет изделия иделия: " + price);
     }
 
     /**

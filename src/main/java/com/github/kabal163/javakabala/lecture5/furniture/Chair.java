@@ -21,6 +21,22 @@ public class Chair extends Furniture {
         this.back = back;
     }
 
+    /**
+     * Тут мы без проблем переопределяем protected метод
+     */
+    @Override
+    protected void printPrice() {
+        System.out.println("Стоимость стула: " + getPrice());
+    }
+
+    /**
+     * Точно также мы без проблем переопределяем package private метод
+     */
+    @Override
+    void printColor() {
+        System.out.println("Цвет стула: " + getColor());
+    }
+
     public boolean hasBack() {
         return back;
     }

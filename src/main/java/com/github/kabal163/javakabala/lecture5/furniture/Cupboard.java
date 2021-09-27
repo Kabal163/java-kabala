@@ -84,6 +84,7 @@ public class Cupboard extends Furniture {
 
     /**
      * Дверь шкафа
+     * Обратите внимание на то, что это inner class
      */
     public static class Door {
 
