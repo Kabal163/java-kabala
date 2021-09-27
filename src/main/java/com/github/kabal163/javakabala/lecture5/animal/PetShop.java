@@ -30,8 +30,8 @@ public class PetShop {
     public void returnAnimal(Animal animal) {
         System.out.println("Бессердечное животное... как ты можешь возвращать это милое создание...");
         System.out.println("Он же дресированный! Ну ка, " + animal.getName() + "... голос!");
-        animal.makeSound();
+        animal.die();
 
-        System.out.println("Деньги забери на кассе, сволоч...");
+        System.out.println("Кажется, оно откинулось...");
     }
 }

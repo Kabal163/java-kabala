@@ -24,8 +24,8 @@ public class Animal {
      * Это мы научимся делать в следующей лекции, когда дойдем
      * до абстрактных классов
      */
-    public void makeSound() {
-        System.out.println("..."); //
+    public void die() {
+        System.out.println("Умирает..."); //
     }
 
     public String getName() {

@@ -22,14 +22,9 @@ public class Application {
         Cat cat = petShop.buyCat();
         Dog dog = petShop.buyDog();
 
-        System.out.println("Неизвестное животное говорит: ");
-        unknownAnimal.makeSound(); // тут мы не знаем, какое реально животное нам продал магазин, поэтому посмотрим, что же будет в консоле
-
-        System.out.println("Кошка говорит: ");
-        cat.makeSound(); // кошка должна мяукать
-
-        System.out.println("Собака говорит: ");
-        dog.makeSound(); // собака должна лаять
+        unknownAnimal.die(); // тут мы не знаем, какое реально животное нам продал магазин, поэтому посмотрим, что же будет в консоле
+        cat.die(); // время кошечки пришло
+        dog.die(); // время собаки пришло
 
         System.out.println();
         petShop.returnAnimal(cat);
