@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 /**
  * Мебель
  */
-public abstract class Furniture {
+public class Furniture {
 
     /**
      * Цвет мебели
@@ -21,6 +21,14 @@ public abstract class Furniture {
 
     public Furniture(String color, BigDecimal price) {
         this.color = color;
+        this.price = price;
+    }
+
+    /**
+     * Создает мебель с цветом по умолчанию
+     */
+    public Furniture(BigDecimal price) {
+        this.color = "WHITE";
         this.price = price;
     }
 
@@ -42,13 +50,6 @@ public abstract class Furniture {
      */
     void printColor() {
         System.out.println("Цвет изделия иделия: " + price);
-    }
-
-    /**
-     * Создает мебель с цветом по умолчанию
-     */
-    public Furniture(BigDecimal price) {
-        this.color = "WHITE";
     }
 
     public String getColor() {
