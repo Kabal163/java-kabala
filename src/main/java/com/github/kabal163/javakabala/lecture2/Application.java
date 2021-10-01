@@ -7,6 +7,9 @@ import static com.github.kabal163.javakabala.lecture2.SwitchExample.Level.*;
 import static com.github.kabal163.javakabala.lecture2.SwitchExample.runSwitchExample;
 import static com.github.kabal163.javakabala.lecture2.WhileExample.*;
 
+/**
+ * Лекция №2: Основные конструкции
+ */
 public class Application {
 
     public static void main(String[] args) {

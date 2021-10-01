@@ -7,7 +7,7 @@ import com.github.kabal163.javakabala.lecture4.university.Teacher;
 import com.github.kabal163.javakabala.lecture4.zoo.Dog;
 
 /**
- * Лекция №2: ООП
+ * Лекция №4: ООП
  */
 public class Application {
 

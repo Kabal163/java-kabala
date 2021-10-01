@@ -12,6 +12,9 @@ import java.util.List;
 
 import static com.github.kabal163.javakabala.lecture5.furniture.Cupboard.Door.Type.SLIDING;
 
+/**
+ * Лекция №5: Наследование и полиморфизм
+ */
 public class Application {
 
     public static void main(String[] args) {

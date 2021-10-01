@@ -5,6 +5,9 @@ import com.github.kabal163.javakabala.lecture7.exception.ResourceNotFoundExcepti
 
 import java.io.IOException;
 
+/**
+ * Лекция №7: Исключения
+ */
 public class Application {
 
     public static void main(String[] args) {

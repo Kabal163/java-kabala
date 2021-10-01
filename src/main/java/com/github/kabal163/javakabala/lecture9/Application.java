@@ -13,6 +13,9 @@ import static com.github.kabal163.javakabala.lecture9.StreamsWrapperExample.wrap
 import static com.github.kabal163.javakabala.lecture9.ZipInputStreamExample.readZip;
 import static com.github.kabal163.javakabala.lecture9.ZipOutputStreamExample.writeToZip;
 
+/**
+ * Лекция №9: Обмен данными
+ */
 public class Application {
 
     public static void main(String[] args) {
