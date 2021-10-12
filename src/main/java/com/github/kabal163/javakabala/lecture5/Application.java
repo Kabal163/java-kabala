@@ -4,6 +4,7 @@ import com.github.kabal163.javakabala.lecture5.animal.Animal;
 import com.github.kabal163.javakabala.lecture5.animal.Cat;
 import com.github.kabal163.javakabala.lecture5.animal.Dog;
 import com.github.kabal163.javakabala.lecture5.animal.PetShop;
+import com.github.kabal163.javakabala.lecture5.constructor.SuperChild;
 import com.github.kabal163.javakabala.lecture5.furniture.Chair;
 import com.github.kabal163.javakabala.lecture5.furniture.Cupboard;
 
@@ -77,5 +78,8 @@ public class Application {
         Chair chair = new Chair("BLACK", new BigDecimal("1000"), true);
 //        chair.printColor();
 //        chair.printPrice();
+
+        // пример последовательности выполнения конструкторов
+        new SuperChild();
     }
 }
