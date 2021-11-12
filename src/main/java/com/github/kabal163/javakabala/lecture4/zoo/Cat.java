@@ -14,6 +14,7 @@ public class Cat {
 
     /**
      * Возраст кота
+     * В месяцах
      */
     private int age;
 
