@@ -1,4 +1,4 @@
-package com.github.kabal163.javakabala.lecture7.exception;
+package com.github.kabal163.javakabala.lecture6.exception;
 
 /**
  * Это проверяемое исключение, которое обязывает вас либо
@@ -8,5 +8,9 @@ public class LoadingException extends Exception {
 
     public LoadingException(String message) {
         super(message);
+    }
+
+    public LoadingException(String message, Throwable cause) {
+        super(message, cause);
     }
 }

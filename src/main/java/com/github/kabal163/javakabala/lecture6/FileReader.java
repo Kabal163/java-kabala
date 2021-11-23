@@ -1,4 +1,4 @@
-package com.github.kabal163.javakabala.lecture7;
+package com.github.kabal163.javakabala.lecture6;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package com.github.kabal163.javakabala.lecture7.exception;
+package com.github.kabal163.javakabala.lecture6.exception;
 
 /**
  * Это пример непроверяемого исключения.

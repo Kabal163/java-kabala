@@ -1,6 +1,7 @@
-package com.github.kabal163.javakabala.lecture7;
+package com.github.kabal163.javakabala.lecture6;
 
-import com.github.kabal163.javakabala.lecture7.exception.MagicBoxOpeningException;
+import com.github.kabal163.javakabala.lecture6.exception.MagicBoxClosingException;
+import com.github.kabal163.javakabala.lecture6.exception.MagicBoxOpeningException;
 
 public class MagicalBox {
 
@@ -10,14 +11,18 @@ public class MagicalBox {
      * @throws MagicBoxOpeningException если так распорядилась судьба...
      */
     public static void open() throws MagicBoxOpeningException {
-        System.out.println("Магическая коробочка открылась");
-
         if (Math.random() > 0.5) {
             throw new MagicBoxOpeningException("У магической коробки закончилась энергия");
         }
+
+        System.out.println("Магическая коробочка открылась");
     }
 
-
+    /**
+     * Метод закрывает магическаю коробочку
+     *
+     * @throws MagicBoxClosingException если у коробочки закончилась энергия
+     */
     public static void close() {
         System.out.println("Магическая коробочка закрылась");
     }

@@ -1,4 +1,4 @@
-package com.github.kabal163.javakabala.lecture8.shop;
+package com.github.kabal163.javakabala.lecture7.shop;
 
 import lombok.Data;
 
