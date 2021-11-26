@@ -40,4 +40,8 @@ public class Country {
     public void removeCity(City city) {
         this.cities.remove(city);
     }
+
+    public int getArea() {
+        return area;
+    }
 }

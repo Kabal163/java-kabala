@@ -1,10 +1,13 @@
 package com.github.kabal163.javakabala.lecture4.auto;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+
 public class DriverTest {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws JsonProcessingException {
         Bmw bmw = new Bmw();
         bmw.setColor("RED");
+        bmw.setVersion(Bmw.Version.M);
 
         Mazda mazda = new Mazda();
         mazda.setColor("BLACK");

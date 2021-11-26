@@ -2,11 +2,13 @@ package com.github.kabal163.javakabala.lecture4.auto;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.annotation.Nonnull;
 
 @Getter
 @Setter
+@ToString
 public abstract class Car {
 
     private String color;

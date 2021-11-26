@@ -1,20 +1,20 @@
-package com.github.kabal163.javakabala.lecture9;
+package com.github.kabal163.javakabala.lecture8;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
-import static com.github.kabal163.javakabala.lecture9.ByteArrayOutputStreamExample.writeToAndReadFromStream;
-import static com.github.kabal163.javakabala.lecture9.FileExample.createFileExample;
-import static com.github.kabal163.javakabala.lecture9.ObjectInputStreamExample.printStudentFromFile;
-import static com.github.kabal163.javakabala.lecture9.ObjectOutputStreamExample.writeJavaObjectToFile;
-import static com.github.kabal163.javakabala.lecture9.PolymorphismStreamExample.printInputData;
-import static com.github.kabal163.javakabala.lecture9.StreamsWrapperExample.wrapStream;
-import static com.github.kabal163.javakabala.lecture9.ZipInputStreamExample.readZip;
-import static com.github.kabal163.javakabala.lecture9.ZipOutputStreamExample.writeToZip;
+import static com.github.kabal163.javakabala.lecture8.ByteArrayOutputStreamExample.writeToAndReadFromStream;
+import static com.github.kabal163.javakabala.lecture8.FileExample.createFileExample;
+import static com.github.kabal163.javakabala.lecture8.ObjectInputStreamExample.printStudentFromFile;
+import static com.github.kabal163.javakabala.lecture8.ObjectOutputStreamExample.writeJavaObjectToFile;
+import static com.github.kabal163.javakabala.lecture8.PolymorphismStreamExample.printInputData;
+import static com.github.kabal163.javakabala.lecture8.StreamsWrapperExample.wrapStream;
+import static com.github.kabal163.javakabala.lecture8.ZipInputStreamExample.readZip;
+import static com.github.kabal163.javakabala.lecture8.ZipOutputStreamExample.writeToZip;
 
 /**
- * Лекция №9: Обмен данными
+ * Лекция №8: Обмен данными
  */
 public class Application {
 

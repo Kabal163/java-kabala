@@ -1,4 +1,4 @@
-package com.github.kabal163.javakabala.lecture9;
+package com.github.kabal163.javakabala.lecture8;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -12,17 +12,18 @@ public class ByteArrayOutputStreamExample {
     public static void writeToAndReadFromStream() {
         final String originalString = "Моргенштерн";
 
+
         byte[] originalBytes = originalString.getBytes(StandardCharsets.UTF_8); // получаем байтовое представление строки
-        ByteArrayOutputStream baos = new ByteArrayOutputStream(); // создаем поток
+        ByteArrayOutputStream out = new ByteArrayOutputStream(); // создаем поток
         System.out.println("Строка, преобразованная в массив байт: " + originalString);
 
         try {
-            baos.write(originalBytes); //  записываем в поток
+            out.write(originalBytes); //  записываем в поток
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        byte[] restoredBytes = baos.toByteArray(); // Вычитали байты обратно. Можно сразу вычитать строку baos.toString()
+        byte[] restoredBytes = out.toByteArray(); // Вычитали байты обратно. Можно сразу вычитать строку out.toString()
         String restoredString = new String(restoredBytes);
 
         System.out.println("Восстановленная строка: " + restoredString);

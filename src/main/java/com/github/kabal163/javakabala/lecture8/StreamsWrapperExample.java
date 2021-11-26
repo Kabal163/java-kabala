@@ -1,4 +1,4 @@
-package com.github.kabal163.javakabala.lecture9;
+package com.github.kabal163.javakabala.lecture8;
 
 import java.io.DataInputStream;
 import java.io.FileInputStream;
