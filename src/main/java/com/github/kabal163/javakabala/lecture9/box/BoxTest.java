@@ -8,7 +8,7 @@ public class BoxTest {
         Object val1 = nonGenericBox.get();
 
         GenericBox<Integer> intBox = new GenericBox<>();
-        intBox.put(34);
+        intBox.put(4);
         Integer val2 = intBox.get();
 
         // Raw type
@@ -24,11 +24,24 @@ public class BoxTest {
         numberBox.put(2.2f);
         numberBox.put(4); // тут все ок
 
-        example(numberBox); // ок
-        // example(intBox); уже не ок, хотя казалось бы...
+        example1(numberBox); // ок
+//        example1(intBox); //уже не ок, хотя казалось бы...
+
+        example2(intBox); // а вот так уже можно
+        example2(numberBox); // number конечно же, тоже можно
     }
 
-    private static void example(GenericBox<Number> box) {
-        System.out.println(box.get());
+    /**
+     * Может принимать только тип {@code GenericBox<Number>}
+     */
+    private static boolean example1(GenericBox<Number> box) {
+        return box.get().intValue() % 2 == 0;
+    }
+
+    /**
+     * Может принимать типы GenericBox типизированный Number или его подтипом
+     */
+    public static <T extends Number> boolean example2(GenericBox<T> box) {
+        return box.get().intValue() % 2 == 0;
     }
 }
