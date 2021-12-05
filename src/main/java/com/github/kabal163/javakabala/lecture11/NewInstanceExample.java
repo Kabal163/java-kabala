@@ -12,5 +12,10 @@ public class NewInstanceExample {
         User user = constructor.newInstance();
 
         System.out.println(user);
+
+        Constructor<User> constructorWithParams = userClass.getDeclaredConstructor(String.class, int.class);
+        User user2 = constructorWithParams.newInstance("Альберт", 55);
+
+        System.out.println(user2);
     }
 }
