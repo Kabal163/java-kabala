@@ -6,6 +6,7 @@ public class Orc extends Hero {
 
     public Orc(String name, int health, int power, int armor, int level) {
         super(name, health, power, armor, level);
+        defenceActive = false;
     }
 
     public void useDefence() {
