@@ -4,21 +4,15 @@ package com.github.kabal163.javakabala.remastering.oop.inheritance.hero;
 public class Dwarf extends Hero {
 
     /**
-     * Значение от 0 до 1. Например, 0.3, что равносильно 30%
+     * Шанс блокировать атаку. Принимает значение от 0 до 100.
+     * Например, 30 равносильно 30%
      */
-    private double blockChance;
+    private final double blockChance;
 
     public Dwarf(String name, int health, int power, int armor, int level, double blockChance) {
         super(name, health, power, armor, level);
+        assertBetween0And100(blockChance);
         this.blockChance = blockChance;
-    }
-
-    public void attack(Orc enemy) {
-        enemy.takeDamage(getPower());
-    }
-
-    public void attack(Elf enemy) {
-        enemy.takeDamage(getPower());
     }
 
     @Override
@@ -26,10 +20,18 @@ public class Dwarf extends Hero {
         // получаем значение от 1 до 100
         double blockAttempt = (System.currentTimeMillis() % 100) + 1;
 
-        if (blockAttempt <= (blockChance * 100)) {
-            System.out.println("Хаха, не попал!");
+        if (blockChance >= blockAttempt) {
+            System.out.println("Ха-ха, не попал!");
         } else {
             super.takeDamage(damage);
+        }
+    }
+
+    private static void assertBetween0And100(double blockChance) {
+        if (blockChance < 0 || blockChance > 100) {
+            throw new IllegalArgumentException(
+                    "Шанс отразить атаку должен лежать в диапазоне от 0 до 100"
+            );
         }
     }
 }

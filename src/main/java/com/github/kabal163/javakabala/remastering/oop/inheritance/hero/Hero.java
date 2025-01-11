@@ -30,8 +30,8 @@ public class Hero {
      *
      * @param hero герой, которого атакует текущий
      */
-    public void attack(Hero hero) {
-        hero.takeDamage(getPower());
+    public void attack(Hero enemy) {
+        enemy.takeDamage(getPower());
     }
 
     // setters and getters

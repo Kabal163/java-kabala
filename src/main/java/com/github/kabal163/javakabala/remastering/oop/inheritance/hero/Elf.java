@@ -6,11 +6,11 @@ public class Elf extends Hero {
         super(name, health, power, armor, level);
     }
 
-    public void attack(Orc enemy) {
-        enemy.takeDamage(getPower());
-    }
-
-    public void attack(Dwarf enemy) {
-        enemy.takeDamage(getPower());
-    }
+//    public void attack(Orc enemy) {
+//        enemy.takeDamage(getPower());
+//    }
+//
+//    public void attack(Dwarf enemy) {
+//        enemy.takeDamage(getPower());
+//    }
 }
