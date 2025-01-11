@@ -23,6 +23,17 @@ public class Hero {
         health -= damage;
     }
 
+    /**
+     * Также перенесли метод атаки в родительский класс.
+     * Важно! Наносим урон через метод {@link #takeDamage(int)},
+     * т.к. его механика может отличиться от одного героя к другому
+     *
+     * @param hero герой, которого атакует текущий
+     */
+    public void attack(Hero hero) {
+        hero.takeDamage(getPower());
+    }
+
     // setters and getters
     public String getName() {
         return name;
