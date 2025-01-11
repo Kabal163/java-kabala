@@ -15,6 +15,15 @@ public class Dwarf extends Hero {
         this.blockChance = blockChance;
     }
 
+// методы attack
+    public void attack(Orc enemy) {
+        enemy.takeDamage(getPower());
+    }
+
+    public void attack(Dwarf enemy) {
+        enemy.takeDamage(getPower());
+    }
+
     @Override
     public void takeDamage(int damage) {
         // получаем значение от 1 до 100

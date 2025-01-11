@@ -4,6 +4,6 @@ public class Orange extends Citrus {
 
     public Orange() {
         System.out.println(Orange.class.getSimpleName());
-        super();
+//        super();
     }
 }
